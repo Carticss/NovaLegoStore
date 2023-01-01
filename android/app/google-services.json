@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "441771431908",
+    "project_id": "alternova-store",
+    "storage_bucket": "alternova-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441771431908:android:903885b0bc3908dfa699f1",
+        "android_client_info": {
+          "package_name": "com.novastorelego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441771431908-d2arkfl2gbvh2she5piu3a4s9gf07nl6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0cZByZ21vfjmhJ14osrXf_Klu7iLs5TE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441771431908-d2arkfl2gbvh2she5piu3a4s9gf07nl6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
