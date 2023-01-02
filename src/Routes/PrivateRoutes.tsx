@@ -10,7 +10,7 @@ export function PrivateRoutes() {
   return (
     <Stack.Navigator>
         <Stack.Screen
-              name="Login"
+              name="Logged"
               component={LoggedScreen}
               options={{ headerShown: false }}
             />

@@ -32,6 +32,10 @@ export const darkStyles = StyleSheet.create({
         height: width * 0.2,
         alignSelf: "flex-start",
     },
+    arrowIcon: {
+        width: width * 0.1,
+        height: width * 0.065,
+    },
     title: {
         fontSize: 30,
         fontWeight: "bold",
@@ -48,6 +52,17 @@ export const darkStyles = StyleSheet.create({
         width: "100%",
         position: "absolute",
         top: height * 0.1,
+    },
+    arrowContainer: {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        width: "20%",
+        position: "absolute",
+        top: "3.5%",
+        overflow: "visible",
+        alignSelf: "flex-start",
     },
     label: {
         color: "white",
@@ -101,6 +116,25 @@ export const darkStyles = StyleSheet.create({
         right: "9%",
     },
     errorMessage: {
+        color: "#0073ff",
+        fontSize: 15,
+        fontWeight: "bold",
+        fontFamily: "URW-Geometric-Regular",
+    },
+    footer: {
+        width: "100%",
+        position: "absolute",
+        bottom: "10%",
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    footerText: {
+        color: "white",
+        fontSize: 15,
+        fontWeight: "bold",
+        fontFamily: "URW-Geometric-Regular",
+    },
+    footerLink: {
         color: "#0073ff",
         fontSize: 15,
         fontWeight: "bold",

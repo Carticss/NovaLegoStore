@@ -5,10 +5,13 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 import LoginForm from './LoginForm/LoginForm';
 import { Icons } from '../../common/media';
 import ToggleDarkMode from '../../common/components/ToggleDarkMode';
+import { useNavigation } from '@react-navigation/native';
+import { StackNavigationProp } from '@react-navigation/stack'; 
 
 export default function Login() {
 
   const { dispatch, state } = useContext(ThemeContext)!;
+  const navigate = useNavigation<StackNavigationProp<any>>();
 
   return (
     <View style={state.container}>
@@ -21,6 +24,15 @@ export default function Login() {
       </View>
 
       <LoginForm />
+
+      <View style={state.footer}>
+        <Text style={state.footerText}>Don't have an account?</Text>
+        <TouchableOpacity
+          onPress={() => navigate.navigate("Register")}
+        >
+          <Text style={state.footerLink}>Sign up</Text>
+        </TouchableOpacity>
+      </View>
 
     </View>
   )
