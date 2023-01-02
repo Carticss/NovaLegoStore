@@ -1,40 +1,29 @@
-import {View, Text} from 'react-native';
-import React, {useEffect, useState} from 'react';
-import auth from '@react-native-firebase/auth';
+import { View, Text } from 'react-native'
+import React, { useReducer } from 'react'
+import DashboardRouter from './src/Routes/DashboardRoutes/DashboardRoutes'
+import { lightStyles } from './src/context/styles/lightStyles'
+import { ThemeActions, ThemeContext } from './src/context/ThemeContext'
 
 export default function App() {
-  // Set an initializing state whilst Firebase connects
-  const [initializing, setInitializing] = useState(true);
-  const [user, setUser] = useState();
 
-  // Handle user state changes
-  function onAuthStateChanged(user) {
-    setUser(user);
-    if (initializing) {
-      setInitializing(false);
-    }
+  const init = () => {
+    return lightStyles
   }
 
-  useEffect(() => {
-    const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
-    return subscriber; // unsubscribe on unmount
-  }, []);
-
-  if (initializing) {
-    return null;
-  }
-
-  if (!user) {
-    return (
-      <View>
-        <Text>Login</Text>
-      </View>
-    );
-  }
+  const [state, dispatch] = useReducer(ThemeActions, lightStyles, init)
 
   return (
-    <View>
-      <Text>Welcome {user.email}</Text>
-    </View>
-  );
+    <>
+      <ThemeContext.Provider 
+        value={
+          {
+            state,
+            dispatch,
+          }
+        }
+      >
+        <DashboardRouter />
+      </ThemeContext.Provider>
+    </>
+  )
 }

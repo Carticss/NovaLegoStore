@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/URWGeometricBold.otf",
+      "sha1": "61fb9fbe1bdc57e527433f6f6035283774152a86"
+    },
+    {
+      "path": "src/assets/fonts/URWGeometricLight.otf",
+      "sha1": "ecb510c67f840330198fbf21ea915861ccc284bc"
+    },
+    {
+      "path": "src/assets/fonts/URWGeometricRegular.otf",
+      "sha1": "579af6296583ccd1b2f5afd3b23a55e5ceca583b"
+    },
+    {
+      "path": "src/assets/fonts/URWGeometricSemiBold.otf",
+      "sha1": "4bcb3eb51f880be8b9034fa8c4a695f59de69e24"
+    }
+  ]
+}

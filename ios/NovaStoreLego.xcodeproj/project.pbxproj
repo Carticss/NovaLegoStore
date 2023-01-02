@@ -14,6 +14,10 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-NovaStoreLego-NovaStoreLegoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-NovaStoreLego-NovaStoreLegoTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		0814F9DD6EA040BB8D169744 /* URWGeometricBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 005B09B8383F44CB98B590A7 /* URWGeometricBold.otf */; };
+		52756D6AD6FA40BEB3C079F7 /* URWGeometricLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 71C93F2FA4384C41BEB25E8A /* URWGeometricLight.otf */; };
+		76BA43D97DF54C0B80CEC127 /* URWGeometricRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D020215C608C4A94A9660EA1 /* URWGeometricRegular.otf */; };
+		9BED7EFC2D8D47A695AF23C8 /* URWGeometricSemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 95AB75C34F7849968EEA2BDC /* URWGeometricSemiBold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = NovaStoreLego/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-NovaStoreLego-NovaStoreLegoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NovaStoreLego-NovaStoreLegoTests.release.xcconfig"; path = "Target Support Files/Pods-NovaStoreLego-NovaStoreLegoTests/Pods-NovaStoreLego-NovaStoreLegoTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		005B09B8383F44CB98B590A7 /* URWGeometricBold.otf */ = {isa = PBXFileReference; name = "URWGeometricBold.otf"; path = "../src/assets/fonts/URWGeometricBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		71C93F2FA4384C41BEB25E8A /* URWGeometricLight.otf */ = {isa = PBXFileReference; name = "URWGeometricLight.otf"; path = "../src/assets/fonts/URWGeometricLight.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D020215C608C4A94A9660EA1 /* URWGeometricRegular.otf */ = {isa = PBXFileReference; name = "URWGeometricRegular.otf"; path = "../src/assets/fonts/URWGeometricRegular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		95AB75C34F7849968EEA2BDC /* URWGeometricSemiBold.otf */ = {isa = PBXFileReference; name = "URWGeometricSemiBold.otf"; path = "../src/assets/fonts/URWGeometricSemiBold.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +130,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				927ED1E2AB3842468AC6A114 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +156,18 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		927ED1E2AB3842468AC6A114 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				005B09B8383F44CB98B590A7 /* URWGeometricBold.otf */,
+				71C93F2FA4384C41BEB25E8A /* URWGeometricLight.otf */,
+				D020215C608C4A94A9660EA1 /* URWGeometricRegular.otf */,
+				95AB75C34F7849968EEA2BDC /* URWGeometricSemiBold.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +265,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				0814F9DD6EA040BB8D169744 /* URWGeometricBold.otf in Resources */,
+				52756D6AD6FA40BEB3C079F7 /* URWGeometricLight.otf in Resources */,
+				76BA43D97DF54C0B80CEC127 /* URWGeometricRegular.otf in Resources */,
+				9BED7EFC2D8D47A695AF23C8 /* URWGeometricSemiBold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
