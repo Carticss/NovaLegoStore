@@ -1,13 +1,16 @@
-import { View, Text, Image } from 'react-native'
-import RegisterForm from './RegisterForm/RegisterForm'
+import { View, Text, Image, TouchableOpacity } from 'react-native'
+import RegisterForm from './components/RegisterForm/RegisterForm'
 import React, { useContext } from 'react'
 import { ThemeContext } from '../../context/ThemeContext';
 import ToggleDarkMode from '../../common/components/ToggleDarkMode';
 import { Icons } from '../../common/media';
 import BackArrow from '../../common/components/BackArrow';
+import { useNavigation } from '@react-navigation/native';
+import { StackNavigationProp } from '@react-navigation/stack';
 
 export default function RegisterScreen() {
 
+  const navigate = useNavigation<StackNavigationProp<any>>();
   const { dispatch, state } = useContext(ThemeContext)!;
 
   return (
@@ -22,6 +25,15 @@ export default function RegisterScreen() {
       </View>
 
       <RegisterForm />
+
+      <View style={state.footer}>
+        <Text style={state.footerText}>Already have an account?</Text>
+        <TouchableOpacity
+          onPress={() => navigate.goBack()}
+        >
+          <Text style={state.footerLink}>Log In</Text>
+        </TouchableOpacity>
+      </View>
       
     </View>
   )

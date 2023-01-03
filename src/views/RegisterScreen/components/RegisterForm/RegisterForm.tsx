@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Text, TextInput, TouchableOpacity, View } from 'react-native';
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '../../../../context/ThemeContext';
 import useRegistrationForm from './useRegisterForm';
 
 function RegisterForm() {

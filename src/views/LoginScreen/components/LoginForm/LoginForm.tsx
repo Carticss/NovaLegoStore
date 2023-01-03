@@ -1,7 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity } from 'react-native'
 import React, { useContext } from 'react'
-import { ThemeContext } from '../../../context/ThemeContext';
-import useLoginForm from '../useLogin';
+import { ThemeContext } from '../../../../context/ThemeContext';
+import useLoginForm from '../../useLogin';
 
 export default function LoginForm() {
 

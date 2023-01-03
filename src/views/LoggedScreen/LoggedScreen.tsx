@@ -1,20 +1,16 @@
 import { View, Text, TouchableOpacity } from 'react-native'
-import React from 'react'
+import React, { useContext } from 'react'
 import auth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
+import ToggleDarkMode from '../../common/components/ToggleDarkMode';
+import { ThemeContext } from '../../context/ThemeContext';
+import StoreList from './components/StoreList/StoreList';
+
 
 export default function LoggedScreen() {
+
     return (
-        <View>
-            <Text>Private Routes</Text>
-            <TouchableOpacity
-                onPress={() => {
-                    auth()
-                        .signOut()
-                        .then(() => console.log('User signed out!'));
-                }}
-            >
-                <Text>Logout</Text>
-            </TouchableOpacity>
-        </View>
+        <>
+            <StoreList />
+        </>
     )
 }

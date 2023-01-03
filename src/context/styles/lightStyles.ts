@@ -3,7 +3,7 @@ import { darkStyles } from "./darkStyles";
 
 const { width, height } = Dimensions.get("window");
 
-export const lightStyles : typeof darkStyles = StyleSheet.create({
+export const lightStyles: typeof darkStyles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "white",
@@ -32,6 +32,10 @@ export const lightStyles : typeof darkStyles = StyleSheet.create({
         width: width * 0.2,
         height: width * 0.2,
         alignSelf: "flex-start",
+    },
+    bagIcon: {
+        width: width * 0.06,
+        height: width * 0.06,
     },
     arrowIcon: {
         width: width * 0.1,
@@ -101,6 +105,39 @@ export const lightStyles : typeof darkStyles = StyleSheet.create({
         right: "5%",
         top: "3%",
     },
+    switchBottom: {
+        width: "20%",
+        height: width * 0.08,
+        borderRadius: 20,
+        backgroundColor: "#ff8c00",
+        justifyContent: "center",
+        alignItems: "center",
+        position: "absolute",
+        right: "5%",
+        top: "91%",
+    },
+    payAllBottom: {
+        width: "20%",
+        height: width * 0.08,
+        borderRadius: 20,
+        backgroundColor: "#ff8c00",
+        justifyContent: "center",
+        alignItems: "center",
+        position: "absolute",
+        right: "5%",
+        top: "77%",
+    },
+    logOutBottom: {
+        width: "20%",
+        height: width * 0.08,
+        borderRadius: 20,
+        backgroundColor: "#ff8c00",
+        justifyContent: "center",
+        alignItems: "center",
+        position: "absolute",
+        right: "5%",
+        top: "84%",
+    },
     switchPlchldr: {
         paddingHorizontal: "10%",
         color: "white",
@@ -140,5 +177,90 @@ export const lightStyles : typeof darkStyles = StyleSheet.create({
         fontSize: 15,
         fontWeight: "bold",
         fontFamily: "URW-Geometric-Regular",
+    },
+    bagContainer: {
+        marginTop: "5%",
+        marginRight: "5%",
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "flex-end",
+        alignItems: "center",
+        width: "20%",
+        height: "80%",
+        overflow: "visible",
+        backgroundColor: "#ff8c00",
+        borderRadius: 20,
+    },
+    productContainer: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        padding: 25,
+        width: '100%',
+    },
+    productContainer2: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        padding: 25,
+        width: '100%',
+    },
+    productImage: {
+        width: 100,
+        height: 100,
+        resizeMode: 'contain',
+        backgroundColor: 'white',
+        borderRadius: 20,
+        borderColor: '#ff8c00',
+        borderWidth: 3,
+    },
+    productDetailsContainer: {
+        marginLeft: 16,
+    },
+    productName: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: 'grey',
+    },
+    productPrice: {
+        fontSize: 14,
+        color: 'grey',
+    },
+    productStock: {
+        fontSize: 14,
+        color: 'lightgrey',
+    },
+    addToCartButton: {
+        backgroundColor: "#ff8c00",
+        width: 100,
+        height: 30,
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginTop: 10,
+        borderRadius: 5
+    },
+    image: {
+        width: 200,
+        height: 200,
+        resizeMode: 'contain',
+        marginBottom: 16,
+    },
+    name: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: 'grey',
+    },
+    price: {
+        fontSize: 20,
+        color: 'grey',
+    },
+    stock: {
+        fontSize: 16,
+        color: 'lightgrey',
+    },
+    description: {
+        fontSize: 16,
+        marginTop: 16,
+        padding: 16,
+        textAlign: 'center',
+        color: 'grey',
     },
 });
