@@ -23,11 +23,9 @@ export const ThemeActions = (state: typeof darkStyles, action: ThemeAction) => {
     switch (action.type) {
         case ThemeTypes.DARK:
             return darkStyles;
-            break;
         case ThemeTypes.LIGHT:
             return lightStyles;
         default:
             return lightStyles;
-            break;
     }
 }

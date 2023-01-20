@@ -22,10 +22,15 @@ interface Productt {
 }
 
 interface Props {
-  product: Product
+  product: Product,
+  route: {
+    params: {
+      product: Product
+    }
+  }
 }
 
-const ProductDetailView = ({ route }) => {
+const ProductDetailView = ({ route }:Props) => {
 
   const { product } = route.params;
   const { dispatch, state } = useContext(ThemeContext)!;
@@ -45,7 +50,7 @@ const ProductDetailView = ({ route }) => {
         <Text style={state.description}>{product.description}</Text>
         <TouchableOpacity
           disabled={product.stock === 0}
-          onPress={() => { handleAddToCart(product) }}
+          onPress={() => { handleAddToCart(product as any) }}
           style={product.stock === 0 ? [state.addToCartButton, { backgroundColor: 'grey' }] : state.addToCartButton}
         >
           <Text style={state.switchPlchldr}>{"Add to Cart"}</Text>

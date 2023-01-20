@@ -11,8 +11,6 @@ export default function BackArrow() {
     const { dispatch, state } = useContext(ThemeContext)!;
     const navigate = useNavigation<StackNavigationProp<any>>();
 
-
-
     return (
         <View
             style={state.arrowContainer}

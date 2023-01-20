@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { Alert } from "react-native";
 import auth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
 
 export const useDashboardRoutes = () => {

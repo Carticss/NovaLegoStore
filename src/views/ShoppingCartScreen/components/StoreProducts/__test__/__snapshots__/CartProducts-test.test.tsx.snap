@@ -1,0 +1,234 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests in App.tsx should render correctly App.tsx 1`] = `
+<RCTScrollView>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "padding": 25,
+          "width": "100%",
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "https://picsum.photos/200/300",
+          }
+        }
+        style={
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#ff8c00",
+            "borderRadius": 20,
+            "borderWidth": 3,
+            "height": 100,
+            "resizeMode": "contain",
+            "width": 100,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "marginLeft": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "grey",
+              "fontSize": 16,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Product 1
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "grey",
+              "fontSize": 14,
+            }
+          }
+        >
+          $
+          100
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "lightgrey",
+              "fontSize": 14,
+            }
+          }
+        >
+          10
+           in stock
+        </Text>
+        <View
+          accessibilityState={
+            Object {
+              "disabled": false,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#ff8c00",
+              "borderRadius": 5,
+              "height": 30,
+              "justifyContent": "center",
+              "marginTop": 10,
+              "opacity": 1,
+              "width": 100,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "white",
+                "fontFamily": "URW-Geometric-Regular",
+                "fontSize": 15,
+                "fontWeight": "bold",
+                "paddingHorizontal": "10%",
+              }
+            }
+          >
+            Remove
+          </Text>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "padding": 25,
+          "width": "100%",
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "https://picsum.photos/200/300",
+          }
+        }
+        style={
+          Object {
+            "backgroundColor": "white",
+            "borderColor": "#ff8c00",
+            "borderRadius": 20,
+            "borderWidth": 3,
+            "height": 100,
+            "resizeMode": "contain",
+            "width": 100,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "marginLeft": 16,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": "grey",
+              "fontSize": 16,
+              "fontWeight": "bold",
+            }
+          }
+        >
+          Product 1
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "grey",
+              "fontSize": 14,
+            }
+          }
+        >
+          $
+          100
+        </Text>
+        <Text
+          style={
+            Object {
+              "color": "lightgrey",
+              "fontSize": 14,
+            }
+          }
+        >
+          0
+           in stock
+        </Text>
+        <View
+          accessibilityState={
+            Object {
+              "disabled": true,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "grey",
+              "borderRadius": 5,
+              "height": 30,
+              "justifyContent": "center",
+              "marginTop": 10,
+              "opacity": 1,
+              "width": 100,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "white",
+                "fontFamily": "URW-Geometric-Regular",
+                "fontSize": 15,
+                "fontWeight": "bold",
+                "paddingHorizontal": "10%",
+              }
+            }
+          >
+            Remove
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

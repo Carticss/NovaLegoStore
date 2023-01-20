@@ -17,8 +17,8 @@ interface Props {
 
 const CartProductList = (props: Props) => {
 
-  const { items, addItem, removeItem } = useContext(ShoppingCartContext);
-  const { dispatch, state } = useContext(ThemeContext)!;
+  const { removeItem } = useContext(ShoppingCartContext);
+  const { state } = useContext(ThemeContext)!;
 
   const { products } = props;
 
